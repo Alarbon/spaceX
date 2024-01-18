@@ -1,6 +1,7 @@
 # SpaceX
 
-Descpleado en netlify aqui: https://space-alarbon.netlify.app/
+Desplegado en netlify aqui: https://space-alarbon.netlify.app/
+
 ![Texto Alternativo](https://cdn.discordapp.com/attachments/1173755894958395393/1197621496642813964/image.png?ex=65bbeeef&is=65a979ef&hm=bc95dc46964f225eb5479c144853591792ad53dc209489a9f7ffe37cabb4cd8c)
 
 
