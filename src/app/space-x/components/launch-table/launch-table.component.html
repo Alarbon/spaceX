@@ -1,0 +1,19 @@
+<div id="table">
+    <p-table [value]="launches" [scrollable]="true" scrollHeight="270px" >
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Flight number</th>
+          <th>Flight name</th>
+          <th>Flight Date</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-launch>
+        <tr>
+          <td><a [routerLink]="['/space-x/launches',launch.id]"> 🚀 #{{ launch.flight_number }}</a></td>
+          <td><a [routerLink]="['/space-x/launches',launch.id]">{{ launch.name }}</a></td>
+          <td><a [routerLink]="['/space-x/launches',launch.id]">{{ launch.date_utc |date:"dd/MM/yyyy" }}</a></td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+

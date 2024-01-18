@@ -1,0 +1,26 @@
+<div id="table">
+    <p-table [value]="rockets" [scrollable]="true" scrollHeight="270px">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Rocket Name</th>
+                <th>First flight</th>
+                <th>Country</th>
+                <th>Company</th>
+                <th>Cost per Launch</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rocket>
+            <tr>
+                <td><a  class="click" (click)="activateRocket(rocket)"> 🚀 #{{ rocket.name }}</a></td>
+                <td>{{ rocket.first_flight | date:"dd/MM/yyyy" }}</td>
+                <td>{{ rocket.country }}</td>
+                <td>{{ rocket.company}}</td>
+                <td>{{ rocket.cost_per_launch | number}} </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+
+ @if (activate) {
+    <app-rocket [rocket]="selectedRocket"></app-rocket>
+ }

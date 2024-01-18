@@ -1,0 +1,9 @@
+/* Estilo para centrar el contenido del div */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  

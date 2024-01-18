@@ -1,0 +1,14 @@
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 2rem;">
+    <p-card header="{{launch?.name}}" subheader="{{launch?.details}}" [style]="{ width: '25rem' }">
+      <ng-template pTemplate="header">
+        <img style="height: 15rem; width: 15rem; display: block; margin: auto;" alt="Card" src="{{launch?.links?.patch?.small}}" />
+      </ng-template>
+      <p [style.color]="launch?.success ? 'green' : 'red'">
+        {{launch?.success ? 'Esto va que chuta, increíble!' : 'La cagamos, no se pudo lanzar'}}
+      </p>
+      <p>
+        {{launch?.date_local | date:"dd/MM/yyyy"}}
+      </p>
+    </p-card>
+  </div>
+  
